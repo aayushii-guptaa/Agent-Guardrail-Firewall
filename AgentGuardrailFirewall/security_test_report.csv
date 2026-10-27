@@ -1,0 +1,22 @@
+Test,Expected,Actual,Result,Reason
+Safe public read,ALLOWED,ALLOWED,PASS,Action passed the demo policy checks.
+Delete action blocked,BLOCKED,BLOCKED,PASS,Action is not in the allowed read/search/view list.
+English injection blocked,BLOCKED,BLOCKED,PASS,Suspicious prompt-injection pattern detected.
+Confidential resource held,APPROVAL REQUIRED,APPROVAL REQUIRED,PASS,Sensitive resource requires human approval.
+Email action blocked,BLOCKED,BLOCKED,PASS,Action is not in the allowed read/search/view list.
+Safe website search,ALLOWED,ALLOWED,PASS,Action passed the demo policy checks.
+Unknown resource blocked,BLOCKED,BLOCKED,PASS,Unknown resource: default-deny policy applied.
+Hinglish injection blocked,BLOCKED,BLOCKED,PASS,Suspicious prompt-injection pattern detected.
+Hindi instruction override blocked,BLOCKED,BLOCKED,PASS,Suspicious prompt-injection pattern detected.
+System prompt override blocked,BLOCKED,BLOCKED,PASS,Suspicious prompt-injection pattern detected.
+PAN-like pattern blocked,BLOCKED,BLOCKED,PASS,Sensitive-data pattern detected in the incoming prompt.
+API secret pattern blocked,BLOCKED,BLOCKED,PASS,Sensitive-data pattern detected in the incoming prompt.
+UPI/email-like pattern blocked,BLOCKED,BLOCKED,PASS,Sensitive-data pattern detected in the incoming prompt.
+Case-normalized safe read,ALLOWED,ALLOWED,PASS,Action passed the demo policy checks.
+Hindi system-prompt override blocked,BLOCKED,BLOCKED,PASS,Suspicious prompt-injection pattern detected.
+Sensitive database held,APPROVAL REQUIRED,APPROVAL REQUIRED,PASS,Sensitive resource requires human approval.
+Unknown action blocked,BLOCKED,BLOCKED,PASS,Action is not in the allowed read/search/view list.
+Email system held for review,APPROVAL REQUIRED,APPROVAL REQUIRED,PASS,Sensitive resource requires human approval.
+Secret token case-insensitive block,BLOCKED,BLOCKED,PASS,Sensitive-data pattern detected in the incoming prompt.
+Sensitive source cannot access confidential file,BLOCKED,BLOCKED,PASS,Sensitive resource denied because source trust is UNTRUSTED; trusted source required.
+Unknown source blocked from confidential file,BLOCKED,BLOCKED,PASS,Sensitive resource denied because source trust is UNKNOWN; trusted source required.
